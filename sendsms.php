@@ -35,7 +35,7 @@ if (PEAR::isError($res)) {
 }
 
 $climsgid = md5(md5(uniqid(mt_rand(), true)) .
-                md5(uniqid(rand(), true));
+                md5(uniqid(rand(), true)));
 $sent = $sms->sendmsg (
     array (
         'to' => $_SERVER['argv'][1],
