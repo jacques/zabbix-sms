@@ -14,7 +14,7 @@ require_once 'SMS/Clickatell.php';
 set_time_limit(0);
 error_reporting(E_ALL);
 
-if ($_SERVER['argc'] != 3) {
+if ($_SERVER['argc'] != 4) {
     die ("Usage: {$_SERVER['argv'][0]} [msisdn] [subject] [message]");
 }
 
